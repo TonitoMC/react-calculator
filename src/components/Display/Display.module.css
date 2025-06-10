@@ -1,0 +1,16 @@
+.display {
+  background-color: var(--nord3);
+  color: #ffffff;
+  font-size: 4em;
+  padding: 10px 20px;
+  text-align: right;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  box-sizing: border-box;
+}
