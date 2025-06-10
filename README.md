@@ -1,12 +1,63 @@
-# React + Vite
+# React Calculator - React, Components, Testing & Linting
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple, robust calculator app built with React, Vite, and Bun. Features a clean UI, full keyboard-free operation, and comprehensive testing and linting.
+---
 
-Currently, two official plugins are available:
+## 🚀 Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Live Calculator](https://calicheoficial.lat/201105/calculator/)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📦 Features
+
+- **Component-based design** using React and custom hooks
+- **Operations:** Addition, subtraction, multiplication, division & modulo
+- **Decimal point** support
+- **9-character display limit** (extra input is ignored)
+- **Error handling:**  
+  - Negative results show `ERROR`
+  - Results > 999999999 show `ERROR`
+  - Division/modulo by zero shows `ERROR`
+- **Chained operations** and intermediate results
+- **Display clears** after operation or equals when a new number is entered
+- **All input via buttons** (no keyboard input)
+- **Custom title and favicon**
+- **Modern linting and formatting** (no semicolons, max 120 chars/line)
+- **No node_modules in repo**; uses Bun for package management
+
+---
+
+## 🛠️ Stack
+
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [Bun](https://bun.sh/)
+- [Vitest](https://vitest.dev/) + [@testing-library/react](https://testing-library.com/)
+- [ESLint](https://eslint.org/)
+- [Storybook](https://storybook.js.org/)
+
+---
+
+## 🧪 Running Tests
+
+- **Run all tests:**
+  ```bash
+  bun run test
+  ```
+  Do **not** use _bun test_ as it uses Bun's testing that doesn't support these visual / DOM tests, this command cannot be overwritten
+
+## 🧹 Linting & Formatting
+This code follows Javascript Standard, this means there's custom linting rules disallowing more than 120 characters per line & trailing semicolons. This can all be verified via the linting script by running
+
+- **Lint the code:**
+  ```bash
+  bun lint
+  ```
+
+## 📚 Storybook
+
+- **Run Storybook:**
+  ```bash
+  bun run storybook
+  ```
